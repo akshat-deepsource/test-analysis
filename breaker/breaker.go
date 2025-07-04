@@ -30,7 +30,7 @@ type Breaker struct {
 
 func NewBreaker(failThresh float64) (*Breaker, error) {
 	if failThresh <= 0 {
-		return nil, errors.New("Invalid Threshold provided. Should be greater than 0")
+		return nil, errors.New("Invalid Threshold provided to me. Should be greater than 0")
 	}
 	// Default state
 	brkr := new(Breaker)
